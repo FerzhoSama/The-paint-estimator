@@ -12,12 +12,14 @@ In the main function, you will need to declare the variables needed.  After you 
 
 	If the shape is rectangular, call the rectangle-based AskForDimensions and HowManyGallons.
 	If the shape is circular, call the circle-based overloaded functions.
+
 3. AskForDimensions, which asks the user for the appropriate dimensions and a description of the data:
 		Rectangular: length, width,  height , and a description string like: "Your room is length feet by width feet and height feet high.";  You may want to use stringstream to build the string.
 
 	These are two overloaded functions with this name, one for the rectangular room, one for the circular room.  This functions also ask the user to provide an estimate of wall space that consists of doors and windows. (in %).  Both functions have void returns and are passed the dimensions and percent of the walls not to paint, and description using pointers. 
 
      4. HowManyGallons, which is passed the dimensions, the paint info, and the percent of walls not to be painted.  It returns an int, the number of full gallons to buy.  The function calculates the wall area to be painted, the ceiling area (if any) and using the number of coats and the paint coverage, calculates the exact amount of paint and then figures out how many whole gallons to buy.
+	
 	This function is also overloaded.  There will be one function for the rectangular shape, and one fore the circular room.  They will be passed the dimensions, the paint coverage, the number of coats, whether the ceiling will be painted and the percentNoPaint.
 
 To summarize the functions:
@@ -30,11 +32,21 @@ int 	HowManyGallons	(double radius, double height, int coverage int coats, strin
 
 
 void 	AskForNameAndShape	(string &rName, int rShape)	
+
+
 void 	AskForDimensions	(double *pRadius, double *pHeight, int *pPercentNoPaint, string *pDimens)	
+
 void 	AskForDimensions	(double *plength,, double *pWidth, double *pHeight, int *pPercentNoPaint, string *pDimens)
+
 void 	AskForPaintInfo	(int &rCoats, int &rCoverage, string &rCeiling)	Gets info on the paint used
-void 	Goodbye	( )	Say goodbye
-void 	DoAgain	( )	Ask if the user want to calculate more rooms.
+
+void 	Goodbye	( )	
+
+void 	DoAgain	( )	
+
+
+
+
 In main, after the calculations are returned, display the results to your customer:  The customer's name, the shape and dimensions of the room, whether the ceiling is to be painted,  how much will be subtracted for doors and windows, the number of coats and the paint coverage.  Then report the exact amount of paint required, and the number of whole gallon cans of paint needed.  Present this information in a nicely formatted manner.  You may write this report as a string, perhaps using stringstream, or simply using cout. Write your results to 2 decimal places of precision.
 
 
