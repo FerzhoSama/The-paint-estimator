@@ -11,8 +11,6 @@ In the main function, you will need to declare the variables needed.  After you 
 3. AskForDimensions, which asks the user for the appropriate dimensions and a description of the data:
 		Rectangular: length, width,  height , and a description string like: "Your room is length feet by width feet and height feet high.";  You may want to use stringstream to build the string.
 
-		Circular: radius, height, and a similarly constructed string description
-
 	These are two overloaded functions with this name, one for the rectangular room, one for the circular room.  This functions also ask the user to provide an estimate of wall space that consists of doors and windows. (in %).  Both functions have void returns and are passed the dimensions and percent of the walls not to paint, and description using pointers. 
 
      4. HowManyGallons, which is passed the dimensions, the paint info, and the percent of walls not to be painted.  It returns an int, the number of full gallons to buy.  The function calculates the wall area to be painted, the ceiling area (if any) and using the number of coats and the paint coverage, calculates the exact amount of paint and then figures out how many whole gallons to buy.
