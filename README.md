@@ -1,7 +1,7 @@
 # The-paint-estimator
 Help, The_Paint_Estimator
 
-Hello, Evryone.
+Hello, Everyone.
 Can anybody help me on this, please.
 
 In the main function, you will need to declare the variables needed.  After you write your course header function, WriteHeader, open a do-while or while loop.  Then you will call these functions:
