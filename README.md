@@ -20,17 +20,19 @@ In the main function, you will need to declare the variables needed.  After you 
 
 To summarize the functions:
 
-return type	function name	function arguments	function description
-void	WriteHeader	( )	Intro to program
-int	HowManyGallons	(double length, double width, double height, int coverage int coats, string ceiling, int percentNoPaint)	Calculates how many cans of paint needed for a rectangular room.
-int 	HowManyGallons	double radius, double height, int coverage int coats, string ceiling, int percentNoPaint)	Calculates how many cans of paint needed for a circular room.
-void 	AskForNameAndShape	(string &rName, int rShape)	Gets info from customer
-void 	AskForDimensions	(double *pRadius, double *pHeight, int *pPercentNoPaint, string *pDimens)	Gets dimensions of the circular room
-void 	AskForDimensions	(double *plength,, double *pWidth, double *pHeight, int *pPercentNoPaint, string *pDimens)	Gets dimensions of the rectangular room
+
+void	WriteHeader	( )	
+
+int	HowManyGallons	(double length, double width, double height, int coverage int coats, string ceiling, int percentNoPaint)	
+int 	HowManyGallons	(double radius, double height, int coverage int coats, string ceiling, int percentNoPaint)	
+
+
+void 	AskForNameAndShape	(string &rName, int rShape)	
+void 	AskForDimensions	(double *pRadius, double *pHeight, int *pPercentNoPaint, string *pDimens)	
+void 	AskForDimensions	(double *plength,, double *pWidth, double *pHeight, int *pPercentNoPaint, string *pDimens)
 void 	AskForPaintInfo	(int &rCoats, int &rCoverage, string &rCeiling)	Gets info on the paint used
 void 	Goodbye	( )	Say goodbye
 void 	DoAgain	( )	Ask if the user want to calculate more rooms.
-
 In main, after the calculations are returned, display the results to your customer:  The customer's name, the shape and dimensions of the room, whether the ceiling is to be painted,  how much will be subtracted for doors and windows, the number of coats and the paint coverage.  Then report the exact amount of paint required, and the number of whole gallon cans of paint needed.  Present this information in a nicely formatted manner.  You may write this report as a string, perhaps using stringstream, or simply using cout. Write your results to 2 decimal places of precision.
 
 
