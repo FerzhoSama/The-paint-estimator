@@ -1,5 +1,9 @@
 # The-paint-estimator
 Help, The_Paint_Estimator
+
+Hello, Evryone.
+Can anybody help me on this, please.
+
 In the main function, you will need to declare the variables needed.  After you write your course header function, WriteHeader, open a do-while or while loop.  Then you will call these functions:
 
 1. AskForNameAndShape, in which you will ask for the customer's name and then ask him/her whether the room is rectangular or circular.  The function has a void return and is passed the customer’s name and shape (rectangular or circular) by reference.  Shape may be represented by an int, a string or even a bool.   Your choice.  Comment to explain your choice.
